@@ -1,26 +1,36 @@
+import threading
+import time
+import emoji
 from flask import Flask
-from redisProxy import worldRedisProxy
-from flaskProxy import index
-from creationModule.spacetimeModule import spacetime
+from creationModule.InanimateModule.Rock import Rock
+from creationModule.spacetimeModule.spacetime import SpaceTime
+from redisProxyModule import worldRedisProxy
+from flaskProxyModule import index
 import numpy as np
+
+from utilsModule.PrintUtils import PrintUtils
 
 app = Flask(__name__)
 app.register_blueprint(index.index)
 
-
 def setup():
-    this.adam = 
+    global spaceTime 
+    spaceTime = SpaceTime()
     print("setup")
 
-def loop():
-    print("loop")
+def loop(name):
     while(1):
-        pass    
+        PrintUtils.print2DArray(spaceTime.spacetime)
+        time.sleep(1)
+        PrintUtils.clearTerminal()
     
 def main():
-    spacetime.test()
     setup()
-    loop()
+    loopThread = threading.Thread(target=loop, args=(1,), daemon=True)
+    loopThread.start()
+    while(1):
+        #Main thread
+        pass
 
 if __name__ == "__main__":
     main()
