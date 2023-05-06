@@ -16,7 +16,7 @@ app.register_blueprint(index.index)
 def setup():
     global spaceTime 
     spaceTime = SpaceTime()
-    print("setup")
+    print("setup done")
 
 def loop(name):
     while(1):
@@ -29,8 +29,8 @@ def main():
     loopThread = threading.Thread(target=loop, args=(1,), daemon=True)
     loopThread.start()
     while(1):
-        #Main thread
-        pass
+        x = input()
+        print('Hello, ' + x)
 
 if __name__ == "__main__":
     main()
