@@ -1,7 +1,8 @@
-from creationModule.spacetimeModule.spacetime import SpaceTime
+from CreationModule.SpacetimeModule.Spacetime import SpaceTime
 
 
 SPACE_TIME = None
 
+
 class Globals(object):
-  SPACE_TIME : SpaceTime
+    SPACE_TIME: SpaceTime

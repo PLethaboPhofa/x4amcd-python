@@ -7,39 +7,39 @@
     },
     "python.formatting.provider": "none",
     "terminal.integrated.profiles.osx": {
-		"bash": {
-			"path": "bash",
-			"args": [
-				"-l"
-			],
-			"icon": "terminal-bash"
-		},
-		"zsh": {
-			"path": "zsh",
-			"args": [
-				"-l"
-			]
-		},
-		"fish": {
-			"path": "fish",
-			"args": [
-				"-l"
-			]
-		},
-		"tmux": {
-			"path": "tmux",
-			"icon": "terminal-tmux"
-		},
-		"pwsh": {
-			"path": "pwsh",
-			"icon": "terminal-powershell"
-		}
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
     },
     "terminal.integrated.profiles.linux": {
         "PowerShell": {
-			"source": "PowerShell",
-			"icon": "terminal-powershell"
-		},
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
         "bash": {
             "path": "bash",
             "icon": "terminal-bash"
@@ -59,4 +59,5 @@
             "icon": "terminal-powershell"
         }
     },
+    "python.linting.enabled": true,
 }
